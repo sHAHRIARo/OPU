@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #87CEEB; /* Sky Blue background */
+            margin: 0;
+            padding: 0;
+            color: #333; /* Dark text for contrast */
+        }
+
+        /* Container for the form */
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #ffffff; /* White background for the form */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Title */
+        h2 {
+            text-align: center;
+            color: #333;
+            font-weight: bold; /* Make title bold */
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+
+        /* Section Header Styles */
+        .section-header {
+            text-align: center;
+            background-color: #00BFFF; /* Deeper blue background for section headers */
+            color: white;
+            padding: 10px;
+            font-weight: bold; /* Make section header bold */
+        }
+
+        /* Input and Label Styles */
+        td {
+            padding: 8px;
+        }
+
+        label {
+            font-weight: bold; /* Make labels bold */
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            background-color: #f0f8ff; /* Light sky-blue background for input fields */
+            color: #333;
+            font-weight: bold; /* Make input text bold */
+        }
+
+        /* Submit Button Styles */
+        .submit-button {
+            text-align: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #32CD32; /* Lime green background for the button */
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold; /* Make button text bold */
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #28a745; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <form action="#" method="post">
+        <table>
+            <!-- Personal Information Section -->
+            <tr>
+                <td colspan="2" class="section-header">Personal Information</td>
+            </tr>
+            <tr>
+                <td><label for="fullname">Full Name:</label></td>
+                <td><input type="text" id="fullname" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Address:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="confirmpassword">Confirm Password:</label></td>
+                <td><input type="password" id="confirmpassword" name="confirmpassword" required></td>
+            </tr>
+
+            <!-- Address Details Section -->
+            <tr>
+                <td colspan="2" class="section-header">Address & Contact Details</td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><input type="text" id="address" name="address" required></td>
+            </tr>
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td><input type="text" id="city" name="city" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+
+            <!-- Submit Button -->
+            <tr>
+                <td colspan="2" class="submit-button">
+                    <button type="submit">Register</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>
