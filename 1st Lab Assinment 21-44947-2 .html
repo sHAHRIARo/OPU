@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- UTF-8 Character Encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahriar's Portal</title>
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333; /* Dark background for the page */
+            color: #e0e0e0; /* Light text for contrast */
+        }
+
+        /* Navbar Styles */
+        nav {
+            background-color: #1c1c1c; /* Dark background for navbar */
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .logo {
+            font-weight: bold;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        nav .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav .menu a:hover {
+            background-color: #444; /* Darker hover effect */
+        }
+
+        nav .logout {
+            background-color: #dc3545; /* Red background for logout */
+            padding: 8px 15px;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        nav .logout:hover {
+            background-color: #c82333; /* Darker red on hover */
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            height: 100%;
+            width: 180px; /* Smaller sidebar width */
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #2c2c2c; /* Dark sidebar background */
+            color: white;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h2 {
+            font-size: 22px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 8px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757; /* Hover effect */
+        }
+
+        /* Main Content Styles */
+        .content {
+            margin-left: 200px; /* Adjusted to create space for smaller sidebar */
+            padding: 20px;
+            background-color: #444; /* Lighter background for the content area */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+        }
+
+        .content h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="logo">AIUB Portal</div>
+    <div class="menu">
+        <a href="#">Courses & Results</a>
+        <a href="#">Registration</a>
+        <a href="#">Grade Report</a>
+        <a href="#">Messages</a>
+    </div>
+    <a href="#" class="logout">Logout</a>
+</nav>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <h2>Menu</h2>
+    <a href="#">Setting</a>
+    <a href="#">Grade Report</a>
+    <a href="#">Registration</a>
+    <a href="#">Courses</a>
+    <a href="#">Application</a>
+</div>
+
+<!-- Main Content -->
+<div class="content">
+    <!-- Removed unnecessary text -->
+</div>
+
+</body>
+</html>
